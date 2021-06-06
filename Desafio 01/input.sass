@@ -1,0 +1,65 @@
+$primary-color: #d52856
+$secundary-color:#b52249
+
+$primary: $primary-color, "primary"
+
+.bd-placeholder-img:hover
+    transform: scale(0.5s, 0.5s)
+    width: 200px
+    height: 200px
+
+.wrapper
+    height: 100vh
+    overflow: scroll
+    overflow: hidden
+    perspective: 2px
+    transform-style: preserve-3d
+    .paralax
+        position: relative 
+        height: 50%
+        min-height: 350px
+        transform-style: inherit
+
+.paralax::before
+    content: " "
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: -1
+    background-attachment: fixed
+    background-size: cover
+    background-repeat: no-repeat
+    background-position-y: center center
+
+.paralax:hover
+    opacity: 0.8
+    .quote:hover
+        font-size: 25px
+        font-weight: 400
+.quote
+  position: absolute
+  top: 25%
+  width: 100%
+  padding: 20px 0
+  color: white
+  text-shadow: 0 0 5px #000
+  font-size: 20px
+  text-align: center 
+
+
+.bg1::before
+    background-image: url('trilha.png')
+
+.bg2::before
+    background-image: url('treino-praia.png')
+
+footer
+  background-color: #3e3e3e
+  display: flex
+  flex-flow: row nowrap
+  color: lightgrey
+  justify-content: space-between
+  padding: 10px 50px
+  align-items: center
